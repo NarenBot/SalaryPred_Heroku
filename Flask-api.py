@@ -11,7 +11,7 @@ from flask import Flask, request, render_template
 
 app = Flask(__name__)
 
-pickle_in = open(r'C:\Users\Naren\Anaconda3\Scripts(Spyder)\Salary Prediction\Model.pkl', 'rb')
+pickle_in = open('Model.pkl', 'rb')
 model = pickle.load(pickle_in)
 #html_link = r"C:\Users\Naren\Anaconda3\Scripts(Spyder)\Salary Prediction\templates\index.html"
 @app.route('/', methods=['Get'])
